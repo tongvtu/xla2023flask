@@ -75,7 +75,7 @@ def upload():
         
         # getting the prediction result from the categories
         result = CATEGORIES[int(round(prediction[0][0]))]
-        
+        os.remove(file_path)
         # returning the result
         return result
     
